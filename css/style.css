@@ -24,6 +24,12 @@ ul {
     list-style: none;
 }
 /* kopjes stylen*/
+
+.logopodcast { 
+    width: 7%;
+    height: 7%;   
+}
+
 h1 {
     color: black;
     font-size: 500%;
@@ -36,21 +42,55 @@ h2 {
     margin: 5%;
 }
 
-.fotogalerij {
-    display: flex;
-    justify-content: space-evenly;
+h3 {
+    text-align: center;
 }
 
-.persoonsinfo {
+p {
+    font-size: larger;
+
+}
+.fotogalerij {
     display: flex;
     justify-content: center;
+}
+
+figure {
+    flex-basis: 0;
+}
+
+figcaption {
+    font-size: larger;    
 }
 
 .afleveringengallerij {
     display: flex;
     justify-content: space-between ;
-    width: 500px;
-    height: 400px;
+    max-width: 30%;
+    max-height: 20%;   
+}
+
+article div {
+    display: flex;
+    justify-content: space-between;
+}
+
+img:hover {
+    animation-name: pulse ;
+    animation-duration: 1s;
+
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
 }
 
 a { 
@@ -88,8 +128,4 @@ footer nav a:focus {
 }
 /* transform is waar komt een plaatje links rechts of omhoog translateX of Y */
 /* scale is hoe groot word iets scale(1.5)*/
-.logopodcast { 
-    width: 7%;
-    height: 7%;   
-}
 
